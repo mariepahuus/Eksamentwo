@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="css/style.css">
+  
+ 
+</head>
+<body>
+  <header>
+    <div id="logo"></div>
+  </header>
+  <main> 
+    <div id="top_section">
+      <div id="flexgrowbox">
+        <div id="imgbox"><v-carousel id="mlCaro">
+          <v-carousel-item id="mlCaroitem"
+            v-for="(item,i) in items"
+            :key="i"
+            :src="item.src"
+            reverse-transition="fade-transition"
+            transition="fade-transition"
+          ></v-carousel-item>
+        </v-carousel>
+      </div>
+        <div id="textbox"><span id="mltext">
+          <h1>
+            Månelandingen
+          </h1>
+          <p id="mltextp">
+              <br> 
+              20. juli 1969 var der kun 5 måneder til den frist, præsident Kennedy 8 år tidligere havde sat for at landsætte et menneske på Månen.</br>
+              <br>
+              Det havde været otte år fulde af drama, og mere end en gang havde man tvivlet på, om fristen kunne overholdes.</br>
+              <br>
+              Men nu var Apollo 11 nået frem til Månen efter en 3 dage lang rejse, og over hele verden fulgte millioner af mennesker landingen på fjernsynet. Det er anslået, at landingen blev fulgt af 530 millioner, og det var et enormt tal i 1969, hvor TV-satellitter var noget helt nyt.</br>
+              <br>
+              Og selv om billederne var sort-hvide og grynede, så sad vi klæbet til fjernsynet – også os, der skriver dette. Klokken var næsten fire om morgenen, men det var en sommernat, så ingen tænkte på at sove.</br>
+              <br>
+              Så dukkede Armstrong op på stigen som en lidt tåget figur. Men hvad gjorde det, for et øjeblik senere ville det første fodspor være sat på Månens støvede overflade.</br>
+          </p>
+  
+         <br> Kort, men grundig forklaring på, hvad Månelandingen er på engelsk.</br></span></div>
+        <div id="ytbox"> <object width="950" height="600px"
+          data="https://www.youtube.com/v/9jI8Uqip60w">
+          </object> </div>
+      </div>
+    </div>   
+    </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+<script src="js/app.js"></script>
+</body>
