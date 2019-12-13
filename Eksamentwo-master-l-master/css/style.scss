@@ -6,6 +6,7 @@ $secondarycolor: rgb(15, 15, 15);
 body {
   background-color:$secondarycolor;
   margin: 0;
+  font-family: helvetica;
 }
 
 header {
@@ -61,7 +62,7 @@ header {
 @media (min-width: 600px) {
 #top_section {
     background-image: url(https://c4.wallpaperflare.com/wallpaper/330/754/405/stars-sky-night-wallpaper-preview.jpg);
-    height: 1650px;
+    height: 1700px;
     max-width: 1600px;
     margin: -100px 0 -100px 0;
     width: 100%;
@@ -94,6 +95,25 @@ header {
       // grid-auto-rows: minmax(100px, auto);
     }
   }
+
+  @media (min-width: 600px) {
+    #top_section_3 {
+        background-image: url(https://c4.wallpaperflare.com/wallpaper/330/754/405/stars-sky-night-wallpaper-preview.jpg);
+        height: 4600px;
+        max-width: 1600px;
+        margin: -100px 0 -250px 0;
+        width: 100%;
+        background-repeat: repeat;
+        padding-top: 200px;
+        display: flex;
+        justify-content: center;
+        // display:grid;
+        // grid-template-columns: repeat(6, 1fr);
+        // grid-gap: 10px;
+        // grid-auto-rows: minmax(100px, auto);
+      }
+    }
+
 
 #year_box {
   height: 1100px;
@@ -342,6 +362,41 @@ button:focus {
   width: 100%;
   margin-top: -450px;
   display: flex;
+  flex-wrap: wrap;
+}
+
+#info_box {
+  width: 100%;
+  height: 80px;
+  display: flex;
+}
+
+#buttom_1 {
+  flex-grow: 6;
+}
+
+#buttom_2 {
+  flex-grow: 6;
+  display: flex;
+  justify-content: center;
+}
+
+#button_0 {
+  height: 50px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: -143px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4em;
+}
+
+#button_0 a {
+  color: #E2A124;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 #test_1 {
@@ -353,8 +408,8 @@ button:focus {
 }
 
 #test_1, #test_2 {
-  height: 300px;
-  color: #C6C6C6;
+  height: 200px;
+  color: #E2A124;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -377,11 +432,64 @@ button:focus {
   font-size: 1.2em;
 }
 
+#planets_header h1 {
+  color: #E2A124;
+  margin-bottom: 80px;
+}
+
+#planets_box {
+  height: 4000px;
+  width: 100%;
+  color: #c6c6c6;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0px 150px;
+  padding: 40px 100px;
+  border-radius: 5px;
+}
+
+h4 {
+  font-size: 1.5em;
+  color: #E2A124;
+}
+
+#text_box {
+  height: 400px;
+  width: 780px;
+  margin-top: 25px;
+  display: flex;
+}
+
+#text {
+  height: 400px;
+  width: 580px;
+}
+
+#text p {
+  margin-bottom: 20px;
+}
+
+#planets, #planet_sun {
+  height: 340px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#planet_sun img {
+  height: 120px;
+}
+
+#planets img {
+  height: 100px;
+}
+
 footer {
   height: 250px;
   background-color: rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: center;
+
 }
 
 #about_us {
@@ -390,7 +498,7 @@ footer {
 
 #poster {
   flex-grow: 4;
-  color: #C6C6C6;
+  color: #c6c6c6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -410,7 +518,7 @@ footer {
 }
 
 #social_media_footer a {
-  color:#c6c6c6;
+  color: #c6c6c6;
   margin-left: 20px;
 }
 
@@ -634,15 +742,16 @@ h1 {
   height: 25px;
   text-align: center;
   float:right;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
   margin: 0 2px 0 2px;
   cursor: pointer;
 }
 
 .button a {
   text-decoration: none;
-  color: #555;
+  color: #E2A124;
   line-height: 25px;
+  font-weight: bold;
 }
 
 #container {
@@ -650,10 +759,14 @@ h1 {
   width:50%;
   margin: 50px auto;
   padding: 50px 30px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius:3px;
-  color: #fff;
-  box-shadow: 2px 2px 10px #c6c6c6;
+  color: #c6c6c6;
+ 
+}
+
+#container h1 {
+  color: #E2A124;
 }
 
 ul {
@@ -664,12 +777,12 @@ ul {
 }
 
 ul li {
-  background: white;
+  background: rgba(255, 255, 255, 0.2);
   width: 200px;
   margin: 10px 0;
   padding: 5px;
   border-radius: 3px;
-  color: black;
+  color: #c6c6c6;
 }
 
 p {

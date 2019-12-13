@@ -57,7 +57,7 @@
   options: [" Rumstation i rummet", " Rumstation i USA", " Rumstation i Rusland"],
   answer: 0
 },{
-  question: "Hvor mange gange når rumstationen rundt om jorden på et døgn?",
+  question: "Hvor mange gange når Den Internationale Rumstation rundt om jorden på et døgn?",
   options: [" 11", " 16", " 23"],
   answer: 1
 }];
