@@ -4,7 +4,7 @@ body {
   font-family: helvetica; }
 
 header {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.1);
   height: 100px;
   margin: 0;
   width: 100%;
@@ -46,31 +46,31 @@ header {
 @media (min-width: 600px) {
   #top_section {
     background-image: url(https://c4.wallpaperflare.com/wallpaper/330/754/405/stars-sky-night-wallpaper-preview.jpg);
-    height: 1700px;
+    height: 1650px;
     max-width: 1600px;
-    margin: -100px 0 -100px 0;
+    margin: -100px 0 -200px;
     width: 100%;
     background-repeat: repeat;
     padding-top: 200px;
     display: flex;
-    justify-content: center; } }
-@media (min-width: 600px) {
+    justify-content: center; }
+
   #top_section_2 {
     background-image: url(https://c4.wallpaperflare.com/wallpaper/330/754/405/stars-sky-night-wallpaper-preview.jpg);
     height: 1200px;
     max-width: 1600px;
-    margin: -100px 0 -250px 0;
+    margin: -100px 0 -200px 0;
     width: 100%;
     background-repeat: repeat;
     padding-top: 200px;
     display: flex;
-    justify-content: center; } }
-@media (min-width: 600px) {
+    justify-content: center; }
+
   #top_section_3 {
     background-image: url(https://c4.wallpaperflare.com/wallpaper/330/754/405/stars-sky-night-wallpaper-preview.jpg);
-    height: 4600px;
+    height: 4500px;
     max-width: 1600px;
-    margin: -100px 0 -250px 0;
+    margin: -100px 0 -200px 0;
     width: 100%;
     background-repeat: repeat;
     padding-top: 200px;
@@ -199,9 +199,9 @@ button:focus {
   -webkit-animation: rotate-center 19s linear reverse infinite both;
   animation: rotate-center 19s linear reverse infinite both; }
   #venus .cls-1 {
-    fill: #683c11; }
-  #venus .cls-2 {
     fill: #ca9e67; }
+  #venus .cls-2 {
+    fill: #683c11; }
 
 #jorden {
   height: 50px;
@@ -229,9 +229,9 @@ button:focus {
   -webkit-animation: rotate-center 7s linear infinite both;
   animation: rotate-center 7s linear infinite both; }
   #jupiter .cls-1 {
-    fill: #c24b26; }
-  #jupiter .cls-2 {
     fill: #ca9e67; }
+  #jupiter .cls-2 {
+    fill: #c24b26; }
 
 #saturn {
   height: 70px;
@@ -241,11 +241,11 @@ button:focus {
   #saturn .cls-1 {
     fill: #c6c6c6; }
   #saturn .cls-2 {
-    fill: #d8d8d8; }
-  #saturn .cls-3 {
     fill: #fff7a9; }
-  #saturn .cls-4 {
+  #saturn .cls-3 {
     fill: #f9b233; }
+  #saturn .cls-4 {
+    fill: #d8d8d8; }
 
 #uranus {
   height: 50px;
@@ -253,9 +253,9 @@ button:focus {
   -webkit-animation: rotate-vert-center 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
   animation: rotate-vert-center 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both; }
   #uranus .cls-1 {
-    fill: #009fe3; }
-  #uranus .cls-2 {
     fill: #faf194; }
+  #uranus .cls-2 {
+    fill: #009fe3; }
   #uranus .cls-3 {
     fill: none; }
   #uranus .cls-4 {
@@ -282,7 +282,8 @@ button:focus {
   width: 100%;
   margin-top: -450px;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: 50px; }
 
 #info_box {
   width: 100%;
@@ -385,27 +386,34 @@ h4 {
   height: 100px; }
 
 footer {
-  height: 250px;
+  height: 200px;
   background-color: rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: center; }
 
 #about_us {
-  flex-grow: 4; }
-
-#poster {
-  flex-grow: 4;
-  color: #c6c6c6;
+  flex-grow: 1.5;
+  color: #C6C6C6;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
 
-#poster p {
-  margin-top: 20px; }
+#poster {
+  flex-grow: 6;
+  color: #C6C6C6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+#poster a {
+  margin-top: 20px;
+  color: #C6C6C6;
+  font-family: helvetica; }
 
 #social_media_footer {
-  flex-grow: 4;
+  flex-grow: 6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -631,9 +639,13 @@ input[type="radio"] {
   width: 100%;
   height: 900px;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
 
-@media (max-width: 1600px) {
+@media (max-width: 1920px) {
+  .row, .navbar {
+    flex-direction: column; }
+
   #imgbox {
     display: flex;
     justify-content: center;
@@ -642,11 +654,11 @@ input[type="radio"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.8;
+    opacity: 0.89;
     height: 350px;
     width: 350px;
     background-size: cover;
-    background-color: white; }
+    background-color: rgba(255, 255, 255, 0.1); }
 
   #textbox {
     display: flex;
@@ -657,12 +669,12 @@ input[type="radio"] {
     justify-content: center;
     align-items: center;
     font-size: 1.3em;
-    font-family: arial helvetica;
-    opacity: 0.8;
+    font-family: helvetica;
     overflow: auto;
     text-overflow: ellipsis;
     align-items: baseline;
-    background-color: white;
+    scrollbar-width: none;
+    background-color: rgba(255, 255, 255, 0.1);
     height: 350px;
     width: 600px;
     color: #0f0f0f; }
@@ -675,6 +687,78 @@ input[type="radio"] {
     height: 600px;
     width: 950px;
     margin-bottom: 50px;
-    margin-top: 50px; } }
+    margin-top: 25px; }
+
+  #htxtbox {
+    text-align: center;
+    font-size: 32px;
+    padding: 20px 60px 10px 60px;
+    text-shadow: 1, 1, 1, 1;
+    color: #E2A124; }
+
+  #textp {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    padding-bottom: 30px;
+    color: #c6c6c6; }
+
+  #Caro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.89;
+    height: 350px;
+    width: 350px;
+    background-size: cover;
+    flex-wrap: wrap; }
+
+  .v-image__image, .v-image__placeholder {
+    height: 350px; }
+
+  #btnMini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    font-family: helvetica;
+    overflow: auto;
+    text-overflow: ellipsis;
+    align-items: baseline;
+    scrollbar-width: none;
+    margin-top: 25px;
+    color: #c6c6c6;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto; }
+
+  #qzbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    font-family: helvetica;
+    overflow: auto;
+    text-overflow: ellipsis;
+    align-items: baseline;
+    scrollbar-width: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    color: #C6C6C6;
+    border-radius: 5px; }
+
+  #qzbtn a {
+    text-decoration: none;
+    color: #c6c6c6; } }
 
 /*# sourceMappingURL=style.css.map */

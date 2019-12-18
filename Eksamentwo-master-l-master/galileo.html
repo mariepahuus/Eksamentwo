@@ -4,6 +4,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="css/style.css">
   
@@ -11,46 +12,101 @@
 </head>
 <body>
   <header>
-    <div id="logo"></div>
+    <div id="logo">
+    </div>
+    <div id="headline">
+      <a href="index.html"><img src="images/logotekst1.svg" alt=""></a>
+    </div>
+    <div id="social_media">
+    </div>
   </header>
   <main>
     <div id="top_section">
       <div id="flexgrowbox">
-      <div id="gaimgbox">  
-          <!-- <v-carousel id="gaCaro">
-              <v-carousel-item id="gaCaroitem"
-                v-for="(item,i) in items"
-                :key="i"
-                :src="item.src"
-                reverse-transition="fade-transition"
-                transition="fade-transition"
-              ></v-carousel-item>
-            </v-carousel> -->
-      </div>
-      <div id="gatextbox"><span id="gatext">
-        <h1>
+        <div id="imgbox">  
+          <div id="app">
+                  <v-app id="Caro">
+                    <v-carousel :show-arrows="false" style="width:350px; height:350px"cycle="true"hide-delimiter-background="true" >
+                      <v-carousel-item 
+                        v-for="(item,i) in items"
+                        :key="i"
+                        :src="item.src"
+                      ></v-carousel-item>
+                    </v-carousel>
+                  </v-app>
+                </div>
+    </div>
+      <div id="textbox"><span id="gatext">
+        <h1 id="htxtbox">
           Galileo
         </h1>
-        <p id="gatextp">I august 1609 bygger Galilei sin første kikkert. Han havde hørt om, men ikke set, konstruktioner af kikkerter i Nederlandene, lavet af Hans Lippershey i 1608.
-            Der er tale om en teaterkikkert. Den har en spredelinse som okular. Den er ret kort og let, og giver god klarhed, men forstørrer kun 2-3 gange. Det var Galilei der gjorde teleskopet berømt. 
-            <br>I august var det lykkedes ham at konstruere en kikkert med op til 8 gange forstørrelse, hvilket han præsenterede for det venetianske senat.
-            I omkring oktober – november kunne han så rette sit første reelle teleskop mod himlen. </br>
+        <p id="textp">
+            
+            Galileo Galilei var en italiensk filosof, fysiker og astronom. Han blev født i 1564 og døde i 1642. Galilei byggede i 1609 sin første kikkert. Han havde hørt om konstruktioner af kikkerter i Nederlandene som var lavet af Hans Lippershey i 1608. <br>
+            Han havde lavet en teaterkikkert som er ret kort og let og giver god klarhed, men forstørrer kun 2-3 gange. Det var Galileo der senere ville gøre teleskopet berømt. 
+            <br>Senere var det lykkedes ham at lave en kikkert med op til 8 gange forstørrelse og senere samme år kunne han rette sit første reelle teleskop mod himlen. </br>
 
-            <br>Den kunne forstørre 30 gange, og det var med denne at han studerede månen, opdagede fire af Jupiters måner, og præciserede stjernetågede pletter til stjerner. Han udgav i marts 1610 værket Sidereus Nuncius, som han fandt mange nye opdagelser ved hjælp af.</br>
-            Opdagelserne fik ham til at gå ind for Kopernikus' Heliocentriske verdensbillede, med solen som centrum, og jorden cirkulerende omkring den, og om sin egen akse.
-            Dette skabte et voldsomt oprør hos den katolske kirke, som tvang ham til at afstå fra sine synspunkter og medgive at jorden var universets centrum. 
-            (Dette blev dog gjort med fingrene krydset på ryggen). Galilei blev idømt fængsel, men en dag senere blev dette ændret til husarrest. I sine sidste leveår skrev han hovedværket om den mekaniske fysik. Nu betragtes han af mange som den moderne eksperimentelle fysiks grundlægger. </p>
+            <br>Det sidste teleskop kunne forstørre 30 gange og den brugte han til at studere månen, og opdagede dens kratere og fire af Jupiters måner.</br>
+              Han fik derefter opkaldt et nedslagskrater på månens nordlige halvkugle efter ham selv, med navnet 'Galilaei'. <br>
+            
+              <br> Han fastlagde også at solen var centrum, og jorden, og de andre planeter drejede omkring den.
+            Denne teori skabte et voldsomt oprør hos den katolske kirke, som tvang ham til at glemme sine synspunkter og sige at jorden var universets centrum. 
+            (Dette blev dog gjort med fingrene krydset på ryggen). Galilei blev idømt fængsel, men én dag senere blev det ændret til husarrest istedet. I sine sidste leveår skrev han et hovedværk om den mekaniske fysik og nu betragtes han af mange mennesker som grundlægger af den moderne fysik. </br>
 
-       <br> Kort animeret forklaring på, hvem og hvad Galileo er, og har lavet, på engelsk.</br></span></div>
-      <div id="gaytbox">
+       <br> Se nedenfor en kort animeret forklaring (på engelsk) på hvem Galileo var og hvad han har lavet.</br></span></div></p>
+       <div><p id="btnMini">Test din viden om Galileo</p><div id="qzbtn">
+          <a href="quizgalileo.html"> Prøv quiz</a></div></div>
+      <div id="ytbox">
          <object width="950" height="600px"
         data="https://www.youtube.com/v/K5vezYaOpC4">
         </object> </div>
       </div>
     </div>
+    <footer>
+      <div id="about_us">
+        <h2>Kontakt</h2>
+        <p>Email: Spacebot@outlook.dk</p>
+        <p>Adresse: Spangsbjerg Kirkevej 101, 6705 Esbjerg</p>
+      </div>
+      <div id="poster">
+        <h2>Print vores plakat her:</h2>
+        <a href="https://www.scribd.com/document/440079353/Poster-Spacebot" target="_blank"><p>Print plakat</p></a>
+      </div>
+      <div id="social_media_footer">
+        <a href="https://www.facebook.com/Spacebotdk-104009207762071/" target="_blank">
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/spacebot.dk/" target="_blank">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+    </footer>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-<script src="js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+<script>
+new Vue({
+  el: '#app',
+  vuetify: new Vuetify(),
+  data () {
+    return {
+      items: [
+        {
+          src: ('images/galileo/ga1.jpg'),
+        },
+        {
+          src: 'images/galileo/ga2.jpg',
+        },
+        {
+          src: 'images/galileo/ga3.jpg',
+        },
+        {
+          src: 'images/galileo/crates.jpg',
+        },
+      ],
+    }
+  },
+})
+</script>
 </body>

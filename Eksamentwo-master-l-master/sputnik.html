@@ -4,6 +4,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="css/style.css">
   
@@ -11,52 +12,101 @@
 </head>
 <body>
   <header>
-    <div id="logo"></div>
+    <div id="logo">
+    </div>
+    <div id="headline">
+      <a href="index.html"><img src="images/logotekst1.svg" alt=""></a>
+    </div>
+    <div id="social_media">
+    </div>
   </header>
   <main>
     <div id="top_section">
       <div id="flexgrowbox">
-      <div id="s1imgbox">  
-          <!-- <v-carousel id="gaCaro">
-              <v-carousel-item id="gaCaroitem"
-                v-for="(item,i) in items"
-                :key="i"
-                :src="item.src"
-                reverse-transition="fade-transition"
-                transition="fade-transition"
-              ></v-carousel-item>
-            </v-carousel> -->
-      </div>
-      <div id="s1textbox"><span id="s1text">
-        <h1>
+        <div id="imgbox">  
+          <div id="app">
+                  <v-app id="Caro">
+                    <v-carousel :show-arrows="false" style="width:350px; height:350px"cycle="true"hide-delimiter-background="true" >
+                      <v-carousel-item 
+                        v-for="(item,i) in items"
+                        :key="i"
+                        :src="item.src"
+                      ></v-carousel-item>
+                    </v-carousel>
+                  </v-app>
+                </div>
+    </div>
+      <div id="textbox"><span id="s1text">
+        <h1 id="htxtbox">
           Sputnik 1
         </h1>
-        <p id="s1textp">
-        <br>Sputnik 1 var den første menneskeskabte satellit, der blev lanceret i kredsløb, den 4. oktober 1957. Satellitten havde en vægt på ca. 83 kg. 
-        Den havde to radiosendere. Det antages, at det kredsede om Jorden omkring 250 km over Jordens overflade. 
-        Analyse af radiosignalerne blev brugt til at indsamle information om den øvre atmosfære. Sputnik blev lanceret af en R-7 raket.
-
-        Sputnik var den første af flere satellitter i Sovjetunionernes Sputnik-program, hvoraf de fleste var succesrige. Sputnik 2 fulgte som den anden satellit i kredsløb, også den første til at bære et dyr, hunden Laika. Den første fejl opstod med Sputnik 3 [?].
+        <p id="textp">
+        <br>Sputnik 1 var den første satellit skabt af mennesket, der blev sendt i kredsløb rundt om Jorden. Det skete den 4. oktober 1957. Satellitten vejede ca. 83 kg og den havde to radiosendere. 
+        Man regner med, at satelitten kredsede om Jorden cirka 250 km over Jordens overflade. 
+        Analysen af radiosignalerne blev brugt til at samle information om atmosfæren over Jorden, og grunden til at satelitten blev sendt afsted var for at bevise at man godt kunne sende en satelit ud i rummet.</br>
+        <br> Satelitten sendte radiosignaler til jorden i 22 dage før batteriet døde. Man regner med at satelitten rejste cirka 60 mio. kilometer og den nåede op på en hastighed der nåede cirka 29.000 km/t. <br>
+        <br> Sputnik 1 havde et meget unikt udseende da den var formet som en kugle, modsat andre sattelitter. Det var også muligt at se satelitten fra Jorden uden kikkert. <br>
+        <br>Sergej Koroljov var Sovjetunionens bedste raketingeniør dengang, og det var hans idé at bygge Sutnik 1. Satelitten var den første af flere satellitter i Sovjetunionernes Sputnik-program. Mange af deres satelitter blev succesfuldt sendt afsted. <br>
+        <br> USA havde også arbejdet på satellitter og deres første afsending havde de regnet med ville blive lanceret før Sputnik, men blev forsinket flere gange. 
+        Usa fik derefter travlt og startede deres Jupiter-projekt og lykkedes med opsendingen af ​​Explorer 1 kort tid efter.
+        Derefter startede det såkaldte Space Race mellem USA og Sovjetunionen. Begge nationer fortsatte med at forsøge at slå hinanden i rumfartsundersøgelser og til sidst "vandt" USA med ​​Apollo 11-missionen til Månen. 
+        </br>Sputnik 1 faldt tilbage til Jorden den 4. januar 1958.</br>
         
-        De Forenede Stater havde også arbejdet på satellitter, primært af teams, der arbejdede for den amerikanske flåde som Project Vanguard. Deres første lancering var oprindeligt beregnet til at blive lanceret før Sputnik, men blev forsinket flere gange, før de sprang på puden. En hastighedsindsats startede derefter under den amerikanske hærs Jupiter-projekt og lykkedes lanceringen af ​​Explorer I i januar. Dette betragtes som starten på Space Race mellem de to supermagter som et aspekt af den kolde krig. Begge nationer fortsatte med at forsøge at slå hinanden i rumfartsundersøgelser og kulminerede til sidst med lanceringen af ​​Apollo 11-missionen til Månen. Sputnik 1 faldt tilbage til Jorden den 4. januar 1958.
-        
-        
-        </br>
-         
-
-            
-        </p>
-
-       <br> Kort forklaring på, hvad Sputnik 1 er på engelsk.</br></span></div>
-      <div id="s1ytbox">
+       <br> Nedenunder er en video (på engelsk) hvor du får viden om Sputnik 1 </br></span></div></p>
+       <div><p id="btnMini">Test din viden om Sputnik 1</p><div id="qzbtn">
+          <a href="quizsputnik1.html"> Prøv quiz</a></div></div>
+      <div id="ytbox">
          <object width="950" height="600px"
-        data="https://www.youtube.com/v/K5vezYaOpC4">
+        data="https://www.youtube.com/v/DM8FJCExdIA">
         </object> </div>
       </div>
     </div>
+    <footer>
+      <div id="about_us">
+        <h2>Kontakt</h2>
+        <p>Email: Spacebot@outlook.dk</p>
+        <p>Adresse: Spangsbjerg Kirkevej 101, 6705 Esbjerg</p>
+      </div>
+      <div id="poster">
+        <h2>Print vores plakat her:</h2>
+        <a href="https://www.scribd.com/document/440079353/Poster-Spacebot" target="_blank"><p>Print plakat</p></a>
+      </div>
+      <div id="social_media_footer">
+        <a href="https://www.facebook.com/Spacebotdk-104009207762071/" target="_blank">
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/spacebot.dk/" target="_blank">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+    </footer>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-<script src="js/app.js"></script>
+  <script>
+  new Vue({
+    el: '#app',
+    vuetify: new Vuetify(),
+    data () {
+      return {
+        items: [
+          {
+            src: 'images/sp1/sp1.jpg',
+          },
+          {
+            src: 'images/sp1/sp2.jpg',
+          },
+          {
+            src: 'images/sp1/sp3.jpg',
+          },
+          {
+            src: 'images/sp1/sp4.jpg',
+          },
+        ],
+      }
+    },
+  })
+  </script>
+  
 </body>

@@ -4,6 +4,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="css/style.css">
   
@@ -11,47 +12,97 @@
 </head>
 <body>
   <header>
-    <div id="logo"></div>
+    <div id="logo">
+    </div>
+    <div id="headline">
+      <a href="index.html"><img src="images/logotekst1.svg" alt=""></a>
+    </div>
+    <div id="social_media">
+    </div>
   </header>
   <main> 
     <div id="top_section">
       <div id="flexgrowbox">
-        <div id="imgbox"><v-carousel id="mlCaro">
-          <v-carousel-item id="mlCaroitem"
-            v-for="(item,i) in items"
-            :key="i"
-            :src="item.src"
-            reverse-transition="fade-transition"
-            transition="fade-transition"
-          ></v-carousel-item>
-        </v-carousel>
-      </div>
+        <div id="imgbox">  
+          <div id="app">
+                  <v-app id="Caro">
+                    <v-carousel :show-arrows="false" style="width:350px; height:350px"cycle="true"hide-delimiter-background="true" >
+                      <v-carousel-item 
+                        v-for="(item,i) in items"
+                        :key="i"
+                        :src="item.src"
+                      ></v-carousel-item>
+                    </v-carousel>
+                  </v-app>
+                </div>
+    </div>
         <div id="textbox"><span id="mltext">
-          <h1>
+          <h1 id="htxtbox">
             Månelandingen
           </h1>
-          <p id="mltextp">
-              <br> 
-              20. juli 1969 var der kun 5 måneder til den frist, præsident Kennedy 8 år tidligere havde sat for at landsætte et menneske på Månen.</br>
-              <br>
-              Det havde været otte år fulde af drama, og mere end en gang havde man tvivlet på, om fristen kunne overholdes.</br>
-              <br>
-              Men nu var Apollo 11 nået frem til Månen efter en 3 dage lang rejse, og over hele verden fulgte millioner af mennesker landingen på fjernsynet. Det er anslået, at landingen blev fulgt af 530 millioner, og det var et enormt tal i 1969, hvor TV-satellitter var noget helt nyt.</br>
-              <br>
-              Og selv om billederne var sort-hvide og grynede, så sad vi klæbet til fjernsynet – også os, der skriver dette. Klokken var næsten fire om morgenen, men det var en sommernat, så ingen tænkte på at sove.</br>
-              <br>
-              Så dukkede Armstrong op på stigen som en lidt tåget figur. Men hvad gjorde det, for et øjeblik senere ville det første fodspor være sat på Månens støvede overflade.</br>
-          </p>
-  
-         <br> Kort, men grundig forklaring på, hvad Månelandingen er på engelsk.</br></span></div>
+          <p id="textp">
+              <br> 20. juli 1969 var der kun 5 måneder til den frist, amerikanske præsident Kennedy 8 år før havde sat for at sende en mand til månen</br>
+              <br> Der havde været en masse drama omkring det hele i alle 8 år, og mange havde tvivlet på om han kunne overholde fristen.</br>
+              <br>Apollo 11 var blevet sendt afsted fra Kennedy Rumcentret i USA og var nu nået frem til Månen efter 3 dages rejse, og over hele verden fulgte millioner af mennesker med i landingen på fjernsynet. Man regner med at landingen blev set i fjernsynet af 530 millioner, hvilket var rigtig mange 1969 fordi fjernsynet ikke var særlig udbredt og tv-satelitter var en helt ny ting.</br>
+              <br>Selv om billederne var sort-hvide og ikke specielt skarpe, så sad alle de mennesker klæbet til fjernsynet.</br>
+              <br>Neil Armstrong viste sig på skærmen som en lille sløret klat, men det gjorde ingenting, for da han trådte ud på månen et øjeblik efter - var det ligemeget med den dårlige kvalitet. Neil Armstrong og Apollo 11 var på månens overflade i 21 timer og 36 minutter. </br>
+              <br>Da USA havde landet på månen var de derefter "vindere" af det Space Race som de havde kørende med Sovjetunionen. Da rumraketten kom tilbage til Jorden fløj landingskapslen ned i havet og landede der. <br>
+              
+
+         <br> Nedenunder er der en kort video (på engelsk) om månelandingen.</br></span></div></p>
+         <div><p id="btnMini">Test din viden om Månelandingen</p><div id="qzbtn">
+            <a href="quizmoonlanding.html"> Prøv quiz</a></div></div>
         <div id="ytbox"> <object width="950" height="600px"
           data="https://www.youtube.com/v/9jI8Uqip60w">
           </object> </div>
       </div>
     </div>   
+    <footer>
+      <div id="about_us">
+        <h2>Kontakt</h2>
+        <p>Email: Spacebot@outlook.dk</p>
+        <p>Adresse: Spangsbjerg Kirkevej 101, 6705 Esbjerg</p>
+      </div>
+      <div id="poster">
+        <h2>Print vores plakat her:</h2>
+        <a href="https://www.scribd.com/document/440079353/Poster-Spacebot" target="_blank"><p>Print plakat</p></a>
+      </div>
+      <div id="social_media_footer">
+        <a href="https://www.facebook.com/Spacebotdk-104009207762071/" target="_blank">
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/spacebot.dk/" target="_blank">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+    </footer>
     </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-<script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+      data () {
+        return {
+          items: [
+            {
+              src: 'images/ml/m1.jpg',
+            },
+            {
+              src: 'images/ml/m2.jpg',
+            },
+            {
+              src: 'images/ml/m3.jpg',
+            },
+            {
+              src: 'images/ml/m4.jpg',
+            },
+          ],
+        }
+      },
+    })
+    </script>
+    
 </body>

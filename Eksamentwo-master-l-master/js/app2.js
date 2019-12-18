@@ -61,7 +61,39 @@
     question: "Hvad består Mars’ overflade af?",
     options: [" Vand", " Støv", " Sand"],
     answer: 1
-},];
+},{
+  question: "Hvor mange gange tungere er Jupiter end Jorden?",
+  options: [" 251 gange", " 318 gange", " 403 gange"],
+  answer: 1
+},{
+  question: "Hvad består størstedelen af Jupiter af?",
+  options: [" Gas", " Støv", " Sten"],
+  answer: 0
+},{
+  question: "Hvad er Saturn kendt for?",
+  options: [" Sit store ringsystem", " At den er meget lille", " At der er græs på overfladen"],
+  answer: 0
+},{
+  question: "Hvorfor er Saturns største måne ‘Titan’ unik?",
+  options: [" Det er den mindste måne i solsystemet", " Det er den eneste måne med en atmosfære i solsystemet", " Fordi mennesker kan bo på den"],
+  answer: 1
+},{
+  question: "Uranus var den..",
+  options: [" Første planet der blev opdaget i solsystemet", " Fjerde planet der blev opdaget i solsystemet", " Sidste planet der blev opdaget i solsystemet"],
+  answer: 0
+},{
+  question: "Hvad er alle Uranus’ måner dækket af?",
+  options: [" Vand", " Græs", " Is"],
+  answer: 2
+},{
+  question: "Hvor høj kan vindhastigheden komme op på, på Neptun?",
+  options: [" 500 km/t", " 1300 km/t", " 2100 km/t"],
+  answer: 2
+},{
+  question: "Neptun er den planet der er..",
+  options: [" Tættest på solen", " Længst væk fra solen", " Tættest på Jorden"],
+  answer: 1
+}];
  
  var quesCounter = 0;
  var selectOptions = [];

@@ -4,6 +4,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="css/style.css">
   
@@ -11,48 +12,94 @@
 </head>
 <body>
   <header>
-    <div id="logo"></div>
+    <div id="logo">
+    </div>
+    <div id="headline">
+      <a href="index.html"><img src="images/logotekst1.svg" alt=""></a>
+    </div>
+    <div id="social_media">
+    </div>
   </header>
   <main>
     <div id="top_section">
       <div id="flexgrowbox">
-      <div id="imgbox">  
-          <!-- <v-carousel id="gaCaro">
-              <v-carousel-item id="gaCaroitem"
-                v-for="(item,i) in items"
-                :key="i"
-                :src="item.src"
-                reverse-transition="fade-transition"
-                transition="fade-transition"
-              ></v-carousel-item>
-            </v-carousel> -->
-      </div>
+        <div id="imgbox">  
+          <div id="app">
+                  <v-app id="Caro">
+                    <v-carousel :show-arrows="false" style="width:350px; height:350px"cycle="true"hide-delimiter-background="true" >
+                      <v-carousel-item 
+                        v-for="(item,i) in items"
+                        :key="i"
+                        :src="item.src"
+                      ></v-carousel-item>
+                    </v-carousel>
+                  </v-app>
+                </div>
+    </div>
       <div id="textbox"><span id="s2text">
-        <h1>
+        <h1 id="htxtbox">
           Sputnik 2
         </h1>
         <p id="textp">
-        <br>
-        Sputnik 2 var et russisk rumfartøj sendt i kredsløb om Jorden den 3. november 1957; det blev den anden rumopsendelse, kort efter Sputnik 1, der opsendtes 4. oktober 1957. Det var den første til at medbringe et levende dyr, en hund ved navn Laika. 
-        </br>
-        <br>
-        Sputnik 2 var et 4-meter (13 fod) høj kegle-formet kapsel med en base diameter på 2 m (6,6 fod). Det indeholdt adskillige rum til radiosendere, et telemetri-system, en programmeringsenhed, en revitalisering og temperaturkontrolsystem til kabinen, og videnskabelige instrumenter. En separat forseglet kabine indeholdt hunden Laika. 
-        </br>
-        <br>
-        Tekniske og biologiske data blev transmitteret til Jorden for en 15 minutters periode i løbet af hver omløb. To fotometre var om bord til at måle solstråling (ultraviolet og gammastråling) og kosmiske stråler. Sputnik 2 indeholdt ikke et tv-kamera, – tv-billeder af hunde på Korabl-Sputnik 2 er almindeligt fejlidentificerede som Laika. 
-        </br>
-        <!-- <br> skriv noget trist om hunden her </br> -->
-        </p>
-       <br> Kort forklaring på, hvad Sputnik 2 er på engelsk.</br></span></div>
+        <br>Sputnik 2 var et russisk rumfartøj der blev sendt kredsløb om Jorden i november 1957. Den var den andet rumfartøj som blev sendt ud i rummet, og det blev sendt afsted kort tid efter Sputnik 1 - faktisk samme år. Der var don den forskel på Sputnik- 1 og 2, at Sputnik 2 havde et dyr med på rejsen. Dette dyr var en hund ved navn Laika. <br> 
+        <br>Sputnik 2 var et rumfartøj som var 4 meter højt og var kegleformet. Rumfartøjet indeholdt en masse forskellige rum f.eks. til: radiosendere, temperaturkontrolsystem til kabinen, og en forseglet kabine som hunden Laika var i. 
+        <br>Data fra både rumsfartøjet men også data fra Laika som f.eks. hjerterytme og andre informationer, bedst sendt til Jorden i 15 minutter, på et tidspunkt, hver gang raketten fløj en runde om Jorden. Der var også to fotometre om bord til at måle solstråling (ultraviolet og gammastråling) og kosmiske stråler. <br>
+        <br> Laika overlevede ikke rumrejsen - og mange mener at man på forhånd vidste at Laika ville dø der oppe, fordi at der hverken var faldskærme eller et varmeskjold på raketten. Derfor ville man vide på forhånd at hunden ville dø af stress og overophedning. <br>
+       <br> Nedenunder finder du en video (på engelsk) med en kort forklaring på, hvad Sputnik 2 er.</br></span></div></p>
+       <div><p id="btnMini">Test din viden om Sputnik 2</p><div id="qzbtn">
+          <a href="quizsputnik2.html"> Prøv quiz</a></div></div>
       <div id="ytbox">
          <object width="950" height="600px"
         data="https://www.youtube.com/v/77b7965hx8Y">
         </object> </div>
       </div>
     </div>
+    <footer>
+      <div id="about_us">
+        <h2>Kontakt</h2>
+        <p>Email: Spacebot@outlook.dk</p>
+        <p>Adresse: Spangsbjerg Kirkevej 101, 6705 Esbjerg</p>
+      </div>
+      <div id="poster">
+        <h2>Print vores plakat her:</h2>
+        <a href="https://www.scribd.com/document/440079353/Poster-Spacebot" target="_blank"><p>Print plakat</p></a>
+      </div>
+      <div id="social_media_footer">
+        <a href="https://www.facebook.com/Spacebotdk-104009207762071/" target="_blank">
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/spacebot.dk/" target="_blank">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+    </footer>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-<script src="js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+<script>
+new Vue({
+  el: '#app',
+  vuetify: new Vuetify(),
+  data () {
+    return {
+      items: [
+        {
+          src: 'images/sp2/sp1.jpg',
+        },
+        {
+          src: 'images/sp2/sp2.jpg',
+        },
+        {
+          src: 'images/sp2/sp3.jpg',
+        },
+        {
+          src: 'images/sp2/sp4.jpg',
+        },
+      ],
+    }
+  },
+})
+</script>
+
 </body>

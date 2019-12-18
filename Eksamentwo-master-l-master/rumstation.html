@@ -4,6 +4,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="css/style.css">
   
@@ -11,48 +12,95 @@
 </head>
 <body>
   <header>
-    <div id="logo"></div>
+    <div id="logo">
+    </div>
+    <div id="headline">
+      <a href="index.html"><img src="images/logotekst1.svg" alt=""></a>
+    </div>
+    <div id="social_media">
+    </div>
   </header>
   <main>
     <div id="top_section">
       <div id="flexgrowbox">
-      <div id="imgbox">  
-          <!-- <v-carousel id="gaCaro">
-              <v-carousel-item id="gaCaroitem"
-                v-for="(item,i) in items"
-                :key="i"
-                :src="item.src"
-                reverse-transition="fade-transition"
-                transition="fade-transition"
-              ></v-carousel-item>
-            </v-carousel> -->
-      </div>
+        <div id="imgbox">  
+          <div id="app">
+                  <v-app id="Caro">
+                    <v-carousel :show-arrows="false" style="width:350px; height:350px"cycle="true"hide-delimiter-background="true" >
+                      <v-carousel-item 
+                        v-for="(item,i) in items"
+                        :key="i"
+                        :src="item.src"
+                      ></v-carousel-item>
+                    </v-carousel>
+                  </v-app>
+                </div>
+    </div>
       <div id="textbox"><span id="s2text">
-        <h1>
+        <h1 id="htxtbox">
            ISS, International Space station.
         </h1>
         <p id="textp">
-        <br>
-        Den Internationale Rumstation er det største fartøj nogensinde fløjet i rummet. Den er i kredsløb rundt om Jorden med en gennemsnitlig hastighed på 27.700 km/t og fuldføre 16 kredsløb pr. dag. Om natten kan det let ses fra Jorden, da det flyver 320 kilometer over os. 
-        </br>
-        <br>
-        16 lande, herunder USA, Rusland, Japan, Canada og mange ESA-medlemsstater samarbejdede om at bygge stationen.
-        </br>
-        <br>
-        Den største del af ISS er en central opsætning, hvor 16 enorme solcellepaneler er knyttet. kabinerne, hvor astronauterne bor og arbejder, er knyttet til midten af skibet. Europas største ISS-projekt er Columbus-videnskabslaboratoriet, hvor astronauter kan udføre videnskabelige eksperimenter under vægtløse forhold. Mange forskellige typer eksperimenter kan finde sted både i og uden for dette rumlaboratorium.
-        </br>
-        <!-- <br> skriv noget trist om hunden her </br> -->
-        </p>
-       <br> Kort forklaring på, hvad ISS er på engelsk.</br></span></div>
+        <br>Den Internationale Rumstation er det største fartøj som nogensinde er blevet sendt op i rummet. Den er hele tiden i kredsløb om Jorden med en gennemsnitshastighed på 27.700 km/t og kommer cirka rundt om Jorden 16 gange om dagen. Om natten kan Rumstationen ses over os, fordi den "kun" flyver cirka 386 kilometer over os. </br>
+        <br>16 lande samarbejdede om at bygge rumstationen, herunder bl.a: USA, Rusland, Japan og Canada - og Danmark er også en del af programmet.</br>
+        <br>ISS har et hovedområde hvor man kan opholde sig og udfra det er 16 enorme solcellepaneler er tilknyttet. Kabinerne, hvor astronauterne bor og arbejder, er knyttet til hovedområdet. ISS-projektet Columbus-videnskabslaboratoriet er Europas største af slagsen, hvor astronauter kan udføre videnskabelige eksperimenter uden tyngdekraft.</br>
+        <br>Rumstationen vejer cirka 450 tons og koster cirka 300 mia. kroner for 10 år i drift. <br>
+        <br>Cirka 220 mennesker har besøgt rumstationen, som altid er bemandet. Blandt disse var danskeren Andreas Mogensen i 2015 ombord på rumstationen. <br>
+       <br> Nedenunder er en kort video (på engelsk) om den Internationale Rumstation</br></span></div></p>
+       <div><p id="btnMini">Test din viden om ISS</p><div id="qzbtn">
+          <a href="quizrumstation.html"> Prøv quiz</a></div></div>
       <div id="ytbox">
          <object width="950" height="600px"
         data="https://www.youtube.com/v/wKYcg-I5RO8">
         </object> </div>
       </div>
     </div>
+    <footer>
+      <div id="about_us">
+        <h2>Kontakt</h2>
+        <p>Email: Spacebot@outlook.dk</p>
+        <p>Adresse: Spangsbjerg Kirkevej 101, 6705 Esbjerg</p>
+      </div>
+      <div id="poster">
+        <h2>Print vores plakat her:</h2>
+        <a href="https://www.scribd.com/document/440079353/Poster-Spacebot" target="_blank"><p>Print plakat</p></a>
+      </div>
+      <div id="social_media_footer">
+        <a href="https://www.facebook.com/Spacebotdk-104009207762071/" target="_blank">
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/spacebot.dk/" target="_blank">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+    </footer>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-<script src="js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+<script>
+new Vue({
+  el: '#app',
+  vuetify: new Vuetify(),
+  data () {
+    return {
+      items: [
+        {
+          src: 'images/iss/is1.jpeg',
+        },
+        {
+          src: 'images/iss/is2.jpg',
+        },
+        {
+          src: 'images/iss/is3.jpg',
+        },
+        {
+          src: 'images/iss/is4.jpg',
+        },
+      ],
+    }
+  },
+})
+</script>
+
 </body>
